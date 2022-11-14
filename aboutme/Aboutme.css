@@ -1,0 +1,56 @@
+body {
+    background: rgb(20, 20, 20);
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Dark-Gray-Images.jpg");
+    background-size: cover;
+}
+
+
+.home-item {
+    text-decoration: none;
+    color: white;
+    font-size: 2vmin;
+    align-self: center;
+}
+
+#flexbox {
+    height: 100%;
+    width: 100%;
+    
+}
+#centreFloatThing {
+    
+    width: 75vw;
+    height: 75vh;
+    align-self: center;
+    position:absolute;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    border: 1px solid rgba(50, 50, 50, 0.3);
+    background:rgba(50, 50, 50, 0.3);
+    border-radius: 0.8%;
+    padding-left: 13vw;
+    padding-top: 0.05vh;
+    overflow-y: hidden;
+}
+.title {
+    font-family: monospace;
+    font-size: clamp(0.9rem, 5vw, 15rem);
+    align-self: center;
+    color: white;
+}
+.bodytext {
+    color: white;
+    font-size: clamp(0.3rem, 1.5vw, 5rem);
+    font-family: monospace;
+}
+details > summary {
+
+    list-style: none;
+ 
+  }
+ 
+  details > summary::-webkit-details-marker {
+ 
+    display: none;
+ 
+  }

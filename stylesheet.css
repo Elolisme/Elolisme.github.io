@@ -1,0 +1,115 @@
+body {
+    background: rgb(20, 20, 20);
+    margin: 0px;
+    overflow: hidden;
+
+}
+
+#menu {  
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+
+.menu-item {
+    color: white;
+    font-size: clamp(1rem, 6vw, 15rem);
+    font-family: monospace;
+    display: block;
+    padding: clamp(0.3rem, 0.6vw, 1rem) 0rem;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#menu-items {
+    margin-left: clamp(4rem, 20vw, 48rem);
+    position: relative;
+    z-index: 2;
+  }
+
+  #menu-items:hover > .menu-item:hover {
+    opacity: 1; 
+  }
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+  }
+
+
+#menu-background-pattern {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 9%, 
+      transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  #menu-items:hover ~ #menu-background-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+  }
+
+#splash-image {
+    position:absolute;
+    width: 67%;
+    margin-left: 65%;
+    margin-top: 4%;
+    overflow: hidden;
+    color: white;
+    background-color: rgb(24, 18, 18);
+
+    height: fit-content;
+}
+.thing1 {
+    color: rgb(251, 86, 7);
+}
+.thing2 {
+    color: rgb(255, 0, 110);
+}
+.thing3 {
+    color: rgb(131, 56, 236);
+}
+.thing4 {
+    color: rgb(58, 134, 255);
+}
+#menu[data-active-index="0"] > #menu-background-pattern {
+    background-position: 0% -25%;
+  }
+  
+  #menu[data-active-index="1"] > #menu-background-pattern {
+    background-position: 0% -50%;
+  }
+  
+  #menu[data-active-index="2"] > #menu-background-pattern {
+    background-position: 0% -75%;
+  }
+  
+  #menu[data-active-index="3"] > #menu-background-pattern {
+    background-position: 0% -100%;
+  }
+  #major { 
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    margin-left: 41vw;
+    margin-top: 95vh;
+    padding: 1vw;
+    border-radius: 17%;
+  }
+  .Major {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(20, 40, 20);
+
+  }

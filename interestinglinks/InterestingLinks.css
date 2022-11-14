@@ -1,0 +1,9 @@
+body {
+    background: rgb(20, 20, 20);
+}
+.home-item {
+    text-decoration: none;
+    color: white;
+    font-size: 2vmin;
+    align-self: center;
+}
